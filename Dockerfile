@@ -12,7 +12,7 @@ COPY evolution-api/package*.json ./
 RUN npm install
 
 # Copie o restante do código da aplicação
-COPY pasta-com-arquivos-clonados .
+COPY evolution-api/package*.json .
 
 # Exponha a porta que a aplicação irá rodar
 EXPOSE 8080
